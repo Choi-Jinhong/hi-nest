@@ -12,6 +12,6 @@ export class AppController {
 
   @Get("/hello") // 데코레이션, 함수와 떨어질 경우 오류를 발생
   sayHello(): string {
-    return 'Hello Everyone';
+    return this.appService.getHi();
   }
 }
